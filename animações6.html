@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content = "ie-edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header1">
+        <div class="com-imagem">
+            <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Quibusdam quod distinctio nemo sequi sit sapiente quas maiores hic at?</h2>
+        </div>
+        <div class="sem-imagem">
+            <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Quibusdam quod distinctio nemo sequi sit sapiente quas maiores hic at?</h2>
+        </div>
+    </div>
+    
+    <style>
+        .header1{
+            position: relative;
+            font-family: sans-serif;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            overflow: hidden;
+        }
+        .header1 .com-imagem,
+        .header1 .sem-imagem{
+            position: relative;
+            width: 50%;
+            background: #1b335f;
+            overflow: hidden;
+        }
+        .header1 .com-imagem{
+            background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScMljea1YZg8PAuGAxdWUaU0HQgsB2R_CGyg&usqp=CAU);
+            background-size :cover;
+        }
+        .header1 .com-imagem h2,
+        .header1 .sem-imagem h2{
+            position: absolute;
+            line-height: 100vh;
+            white-space: nowrap;
+            font-size: 12cm;
+        }
+        .header1 .com-imagem h2{
+            color: transparent;
+            -webkit-text-stroke: 2px;
+            -webkit-text-stroke-color: #fff;
+            left: 100%;
+            animation: animate-text 60s linear infinite;
+        }
+        .header1 .sem-imagem h2{
+            color: #fff;
+            animation: animate-text 60s linear infinite;
+        }
+        @keyframes animate-text{
+            0%{
+                transform:translateX(0);
+            }
+            100%{
+                transform: translateX(-100%);
+            }
+        }
+
+
+    </style>
+</body>
+</html>
